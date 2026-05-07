@@ -2,12 +2,18 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0c95d4;
+
+    /* Background Image */
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header */
 header {
-    background-color: #0b94b6;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 20px;
     text-align: center;
@@ -15,7 +21,7 @@ header {
 
 /* Navigation */
 nav {
-    background-color: #0c96cc;
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     text-align: center;
 }
@@ -38,24 +44,29 @@ main {
 
 /* Sections */
 section {
-    background-color: #0ca2bd;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 /* Products */
 .product {
-    border: 1px solid #db0808;
+    border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.03);
 }
 
 /* Footer */
 footer {
-    background-color: #038ce7;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     padding: 10px;
